@@ -16,7 +16,7 @@
         .container {
             display: flex;
             justify-content: space-between;
-            padding: 50px;
+            padding: 45px;
         }
 
         .left-dashboard {
@@ -25,18 +25,12 @@
         }
 
         .right-resources {
-            width: 500px; /* Set a fixed width for the resources section */
-        }
-
-        /* Make the iframe responsive within the left-dashboard */
-        .left-dashboard iframe {
-            width: 100%; /* Make the iframe width 100% of the container */
-            height: 520px;
+            width: 32%; /* Set a fixed width for the resources section */
         }
 
         /* Styling for headings */
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             margin-top: 0;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -47,30 +41,31 @@
 
         h2 {
             font-size: 1.5rem;
-            margin-top: 20px;
             
+        }
+
+        p {
+            font-size: 0.8rem;
         }
 
         .resources-container {
             display: flex;
             gap: 20px; /* Space between the two sections */
-            margin-top: 50px;
         }
         
         .resource-section {
             flex: 1; /* Equal width for both sections */
             border: 1px solid #ccc;
             border-radius: 8px;
-            padding: 15px;
             background-color: #f9f9f9;
+            text-align: center;
         }
         
         .resource-section h3 {
             font-size: 1.2em;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
+            padding-bottom: 1rem;
         }
-        
 
         ul.resources-list {
             list-style-type: none; /* Removes bullet points */
@@ -78,18 +73,25 @@
         }
         
         ul.resources-list li {
-            margin-bottom: 6px; /* Adds spacing between each item */
-            font-size: 18px;
+            margin-bottom: 0.2rem; /* Adds spacing between each item */
+            font-size: 0.8rem;
         }
         
         ul.resources-list a {
             text-decoration: none; /* Removes underline */
             color: #007bff; /* Adds blue color to links */
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         
         ul.resources-list a:hover {
             text-decoration: underline; /* Underline the link on hover */
+        }
+
+        @media (max-width: 1024px) {
+            /* Adjust font size for smaller laptops or tablets */
+            .right-resources {
+                width: 38%; /* Set a fixed width for the resources section */
+            }
         }
 
     </style>
@@ -98,21 +100,21 @@
     <div class="container">
         <div class="left-dashboard">
 
-            <h1>My Learning Dashboard: <br>Web Development and Data Analysis</h1>
+            <h1>My Learning Dashboard</h1>
             <h3>Timeline:</h3>
             <p>1) <strong>January - June 2024</strong>: Full Stack Web Development</p>
             <p>2) <strong>July - September 2024</strong>: Python for Data Analysis</p>
             <p>3) <strong>October - December 2024</strong>: Built Data Analysis Projects Using Python and Web Development Tools</p>
             <p><em><strong>Note:The format of the duration is [hh]:mm</strong></em></p>
     
-            <iframe width="70%" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=51DA301A78C381C1%21404&authkey=%21AKSgO25YsMiZO9Y&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+            <iframe width="100%" height="320" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=51DA301A78C381C1%21404&authkey=%21AKSgO25YsMiZO9Y&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
         
         </div>
     
         <div class="right-resources">
             <h1>Resources and Technologies</h1>
 
-            <h3>Study Platforms</h3>
+            <h3>Study Platforms:</h3>
             <ul class="resources-list">
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Mozilla Developer Network</a></li>
                 <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
@@ -129,7 +131,7 @@
 
             <div class="resources-container">
                 <div class="resource-section">
-                    <h3>FS Web Development</h3>
+                    <h3>Web Dev</h3>
                     <ul class="resources-list">
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">HTML, CSS, JavaScript</a></li>
                         <li><a href="https://react.dev/" target="_blank">React</a></li>
@@ -147,7 +149,7 @@
                         <li><a href="https://jupyter.org/" target="_blank">Jupyter Notebook</a></li>
                         <li><a href="https://www.python.org/" target="_blank">Python</a></li>
                         <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></li>
-                        <li><a href="https://plotly.com/python/" target="_blank">Ploty - Graphing Library</a></li>
+                        <li><a href="https://plotly.com/python/" target="_blank">Ploty</a></li>
                         <li><a href="https://flask.palletsprojects.com/en/stable/" target="_blank">Flask</a></li>
                         <li><a href="https://www.microsoft.com/en-us/power-platform/products/power-bi" target="_blank">Power BI</a></li>
                         <li><a href="https://www.nltk.org/_modules/nltk/sentiment/vader.html" target="_blank">nltk: Vader</a></li>
